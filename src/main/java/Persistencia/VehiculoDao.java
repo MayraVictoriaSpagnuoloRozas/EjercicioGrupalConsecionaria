@@ -9,7 +9,7 @@ public class VehiculoDao extends Dao {
 
     public List<Vehiculo> getVehiculo() throws Exception {
         try {
-            String sql = "SELECT * FROM informacion;";
+            String sql = "SELECT * FROM registros;";
 
             queryDatabase(sql);
 
