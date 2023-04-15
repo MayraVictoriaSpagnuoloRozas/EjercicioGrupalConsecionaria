@@ -21,10 +21,10 @@ public class VehiculoServicio {
                 throw  new Exception("No existen registros");
             }else {
                 System.out.println("LIST VEHICULOS");
-                System.out.printf("%-10s%-15s%-15s%-20s\n","MARCA","MODELO","COLOR",
+                System.out.printf("%-15s%-15s%-15s%-20s\n","MARCA","MODELO","COLOR",
                         "STOCK");
                 for (Vehiculo vehiculo : vehiculos) {
-                    System.out.printf("%-10s%-15s%-15s%-20s\n",
+                    System.out.printf("%-15s%-15s%-15s%-20s\n",
                             vehiculo.getMarca(), vehiculo.getModelo(), vehiculo.getColor(),vehiculo.getStock());
                 }
             }
