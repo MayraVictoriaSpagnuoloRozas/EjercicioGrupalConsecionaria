@@ -1,7 +1,14 @@
 package org.example;
 
+import Servicio.VehiculoServicio;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        VehiculoServicio vehiculoServicio = new VehiculoServicio();
+        try {
+            vehiculoServicio.printVehiculos();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
     }
 }
